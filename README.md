@@ -1,3 +1,36 @@
+////
+# PowerMap
+Reprsenting transmission lines prsesnt in Patiala,also showing Patiala city boundary
+Techs used: Angular,Leaflet,OverpassAPI(no need of installation)
+
+## Leaflet installation guide:
+>>npm install leaflet
+
+In angular.json:
+"styles": [
+              "src/styles.css",
+              "node_modules/leaflet/dist/leaflet.css"
+            ],
+            "scripts": [
+              "node_modules/leaflet/dist/leaflet.js"
+            ]
+
+to use leaflet and map,ameks sure to import in the component,:
+import * as L from 'leaflet';
+import { GeoJSON, FeatureCollection, LineString } from 'geojson';//
+import { Component,OnInit } from '@angular/core';//for initialising the map,it is good approach
+
+
+
+
+To run this project
+clone the project
+>>npm install <br/>
+>>ng serve 
+
+
+
+////
 # TransmissionLine
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.0.
